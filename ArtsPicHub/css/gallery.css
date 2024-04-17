@@ -1,0 +1,100 @@
+/* DEVELOPER Valeria Heredia, IS117-004, Spring 2024 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/*categories title*/
+.title{
+    margin-top: 40px;
+    text-align: center;
+    animation: fadeInFromTop 3s ease-in-out;
+}
+.categories {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    animation: fadeInFromTop 3s ease-in-out;
+}
+
+.category {
+    text-align: center;
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.circle:hover {
+  box-shadow: 0 0 15px gray; 
+  cursor: pointer; 
+}
+.category-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+/*Gallery Layout*/
+  #gallery {
+    line-height:0;
+    -webkit-column-count:5; 
+    -webkit-column-gap:5px; 
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+ }
+
+ #gallery img {
+    width: calc(100% - 40px);
+    height: auto !important;
+    margin-bottom:30px; 
+    animation: fadeInFromTop 3s ease-in-out;
+ }
+ #gallery {
+    padding: 0 100px; 
+  }
+  #gallery img:hover {
+    box-shadow: 0 0 15px gray; 
+    cursor: pointer; 
+}
+  
+  @media (min-width: 800px) {
+    #gallery {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    #gallery {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #gallery {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+    }
+  }
+  footer{
+    margin-top: 200px ;
+}
