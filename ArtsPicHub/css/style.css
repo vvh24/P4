@@ -146,50 +146,6 @@ ul{
     color: #888;
 	animation: fadeInFromTop 3s ease-in-out;
 }
-
-/* Create the horizontal lines */
-.image-caption h2::before,
-.image-caption h2::after {
-    content: ''; 
-    position: absolute;
-    top: 50%;
-    width: 40px; 
-    height: 2px; 
-    background-color: pink; 
-    opacity: 1; 
-}
-
-/* Position the left line */
-.image-caption h2::before {
-    left: -405px; 
-    animation: wipeLeft 5s forwards; 
-}
-
-/* Position the right line */
-.image-caption h2::after {
-    right: -405px; 
-    animation: wipeRight 5s forwards; 
-}
-
-/* Wipe left animation */
-@keyframes wipeLeft {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 400px;
-    }
-}
-
-/* Wipe right animation */
-@keyframes wipeRight {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 400px; 
-    }
-}
 /*Button See Gallery*/
 .image-caption button {
     background-color: #cccccceb; 
